@@ -8,7 +8,7 @@
        </div>
        <div class="col col-sm">
          <button id="connect" class="btn btn-dark" v-on:click="handleConnect">Connect to queue</button>
-         <button id="connect" class="btn btn-danger" v-on:click="handleDisconnect">Disconnect from queue</button>
+         <button id="disconnect" class="btn btn-danger" v-on:click="handleDisconnect">Disconnect from queue</button>
        </div>
        <div class="col col-sm">
        </div>
@@ -17,7 +17,7 @@
 
        <div v-for="item in incoming" :key="item">
           <p>Incoming key:{{item.msg}}</p>
-    </div>
+       </div>
      </div>
   </div>
 </template>
